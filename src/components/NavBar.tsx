@@ -8,6 +8,7 @@ import Link from "next/link";
 import { MdMenu, MdClose } from "react-icons/md";
 import Button from "./Button";
 import { usePathname } from "next/navigation";
+import ResumeButton from "./ResumeButton";
 
 export default function NavBar({
   settings,
@@ -148,9 +149,9 @@ function DesktopMenu({
         </React.Fragment>
       ))}
       <li>
-        <Button
-          linkField={settings.data.cta_link}
-          label={settings.data.cta_label}
+        <ResumeButton
+          linkField="https://github.com/StevenShiGit"
+          label="Resume"
           className="ml-3"
         />
       </li>

@@ -32,19 +32,19 @@ export default async function Footer() {
         </div>
         <nav className="navigation" aria-label="Footer Navigation">
           <ul className="flex items-center gap-1">
-            {settings.data.nav_item.map(({ link, label }, index) => (
-              <React.Fragment key={label}>
+            {
+              <React.Fragment >
                 <li>
-                  <PrismicNextLink
+                  <a
                     className={clsx(
                       "group relative block overflow-hidden  rounded px-3 py-1 text-base font-bold text-slate-100 transition-colors duration-150 hover:hover:text-yellow-400",
                     )}
-                    field={link}
+                    href="/about"
                   >
-                    {label}
-                  </PrismicNextLink>
+                    About
+                  </a>
                 </li>
-                {index < settings.data.nav_item.length - 1 && (
+                {settings.data.nav_item.length - 1 && (
                   <span
                     className="text-4xl font-thin leading-[0] text-slate-400"
                     aria-hidden="true"
@@ -53,36 +53,75 @@ export default async function Footer() {
                   </span>
                 )}
               </React.Fragment>
-            ))}
+              
+            }
+            {
+              <React.Fragment >
+                <li>
+                  <a
+                    className={clsx(
+                      "group relative block overflow-hidden  rounded px-3 py-1 text-base font-bold text-slate-100 transition-colors duration-150 hover:hover:text-yellow-400",
+                    )}
+                    href="/projects"
+                  >
+                    Projects
+                  </a>
+                </li>
+                {settings.data.nav_item.length - 1 && (
+                  <span
+                    className="text-4xl font-thin leading-[0] text-slate-400"
+                    aria-hidden="true"
+                  >
+                    /
+                  </span>
+                )}
+              </React.Fragment>
+            }
+            {
+              <React.Fragment >
+                <li>
+                  <a
+                    className={clsx(
+                      "group relative block overflow-hidden  rounded px-3 py-1 text-base font-bold text-slate-100 transition-colors duration-150 hover:hover:text-yellow-400",
+                    )}
+                    href="/projects"
+                  >
+                    Resume
+                  </a>
+                </li>
+                
+              </React.Fragment>
+            }
+            
           </ul>
         </nav>
         <div className="socials inline-flex justify-center sm:justify-end">
           {isFilled.link(settings.data.github_link) && (
-            <PrismicNextLink
-              field={settings.data.github_link}
+            <a
+              href="https://github.com/StevenShiGit"
               className="p-2 text-2xl text-slate-300 transition-all duration-150 hover:scale-125 hover:text-yellow-400"
               aria-label={settings.data.name + " on GitHub"}
             >
               <FaGithub />
-            </PrismicNextLink>
+            </a>
           )}
           {isFilled.link(settings.data.twitter_link) && (
-            <PrismicNextLink
-              field={settings.data.twitter_link}
+            <a
+              href="https://github.com/StevenShiGit"
               className="p-2 text-2xl text-slate-300 transition-all duration-150 hover:scale-125 hover:text-yellow-400"
               aria-label={settings.data.name + " on Twitter"}
             >
               <FaTwitter />
-            </PrismicNextLink>
+            </a>
           )}
           {isFilled.link(settings.data.linkedin_link) && (
-            <PrismicNextLink
-              field={settings.data.linkedin_link}
+            <a
+              href="https://github.com/StevenShiGit"
               className="p-2 text-2xl text-slate-300 transition-all duration-150 hover:scale-125 hover:text-yellow-400"
               aria-label={settings.data.name + " on LinkedIn"}
             >
               <FaLinkedin />
-            </PrismicNextLink>
+            </a>
           )}
         </div>
       </div>
