@@ -12,23 +12,19 @@ import Heading from "@/components/Heading";
 
 gsap.registerPlugin(ScrollTrigger);
 
-/**
- * Props for `TechList`.
- */
+
 export type TechListProps = SliceComponentProps<Content.TechListSlice>;
 
-/**
- * Component for "TechList" Slices.
- */
+
 const TechList = ({ slice }: TechListProps): JSX.Element => {
   const component = useRef(null);
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      // create as many GSAP animations and/or ScrollTriggers here as you want...
+      
       const tl = gsap.timeline({
         scrollTrigger: {
-          pin: true, // pin the trigger element while active
+          pin: true, 
           start: "top bottom",
           end: "bottom top",
           scrub: 4,

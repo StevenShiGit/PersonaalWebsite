@@ -6,20 +6,16 @@ import { Shapes } from "@/slices/Hero/Shapes";
 import Bounded from "@/components/Bounded";
 import gsap from "gsap";
 
-/**
- * Props for `Hero`.
- */
+
 export type HeroProps = SliceComponentProps<Content.HeroSlice>;
 
-/**
- * Component for "Hero" Slices.
- */
+
 const Hero = ({ slice }: HeroProps): JSX.Element => {
   const component = useRef(null);
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      // create as many GSAP animations and/or ScrollTriggers here as you want...
+      
       gsap
         .timeline()
         .fromTo(

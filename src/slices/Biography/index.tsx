@@ -6,14 +6,10 @@ import { Content } from "@prismicio/client";
 import profile from './profile.jpeg'
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 
-/**
- * Props for `Biography`.
- */
+
 export type BiographyProps = SliceComponentProps<Content.BiographySlice>;
 
-/**
- * Component for "Biography" Slices.
- */
+
 const Biography = ({ slice }: BiographyProps): JSX.Element => {
   
   return (
@@ -27,7 +23,25 @@ const Biography = ({ slice }: BiographyProps): JSX.Element => {
         </Heading>
 
         <div className="prose prose-xl prose-slate prose-invert col-start-1">
-          Text here
+          Hi, I'm Steven. I'm currently a second-year student at the University of Waterloo studying data science. I'm passionate about machine learning, full-stack development, and of course, data science
+
+          <br/>
+          <br/>
+
+          I have a deep understanding with the MERN stack (MongoDB, Express.js, React.js, Node.js), which I used to create a variety of full-stack applications, both for applicable purposes and personal projects.
+
+          
+          I also have experience with NLP, machine learning, and data science through the use of various python libraries 
+
+          <br/>
+          <br/>
+          I'm passionate about these technologies because of the endless possibilities they offer for innovation and problem-solving. From crafting seamless user experiences to leveraging data-driven insights for impactful solutions, I love building applications that make a tangible difference in people's lives. 
+
+          <br/>
+          <br/>
+          I'm eager to collaborate with others to create technology that can shape a brighter and more inclusive future. 
+        
+          When I'm not programming, I enjoy weightlifting, cooking, basketball, and playing chess.
         </div>
         <ResumeButton
           linkField= "https://www.wikipedia.org"
