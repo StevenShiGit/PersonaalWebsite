@@ -3,7 +3,7 @@ import Bounded from "@/components/Bounded";
 import ResumeButton from "@/components/ResumeButton";
 import Heading from "@/components/Heading";
 import { Content } from "@prismicio/client";
-import profile from './profile.jpeg'
+import profile from "./profile.jpeg"
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 
 
@@ -23,7 +23,7 @@ const Biography = ({ slice }: BiographyProps): JSX.Element => {
         </Heading>
 
         <div className="prose prose-xl prose-slate prose-invert col-start-1">
-          Hi, I'm Steven. I'm currently a second-year student at the University of Waterloo studying data science. I'm passionate about machine learning, full-stack development, and of course, data science
+          Hi, I&apos;m Steven. I&apos;m currently a second-year student at the University of Waterloo studying data science. I&apos;m passionate about machine learning, full-stack development, and of course, data science
 
           <br/>
           <br/>
@@ -35,13 +35,13 @@ const Biography = ({ slice }: BiographyProps): JSX.Element => {
 
           <br/>
           <br/>
-          I'm passionate about these technologies because of the endless possibilities they offer for innovation and problem-solving. From crafting seamless user experiences to leveraging data-driven insights for impactful solutions, I love building applications that make a tangible difference in people's lives. 
+          I&apos;m passionate about these technologies because of the endless possibilities they offer for innovation and problem-solving. From crafting seamless user experiences to leveraging data-driven insights for impactful solutions, I love building applications that make a tangible difference in people&apos;s lives. 
 
           <br/>
           <br/>
-          I'm eager to collaborate with others to create technology that can shape a brighter and more inclusive future. 
+          I&apos;m eager to collaborate with others to create technology that can shape a brighter and more inclusive future. 
         
-          When I'm not programming, I enjoy weightlifting, cooking, basketball, and playing chess.
+          When I&apos;m not programming, I enjoy weightlifting, cooking, basketball, and playing chess.
         </div>
         <ResumeButton
           linkField= "https://www.wikipedia.org"
