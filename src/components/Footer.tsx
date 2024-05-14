@@ -105,24 +105,7 @@ export default async function Footer() {
               <FaGithub />
             </a>
           )}
-          {isFilled.link(settings.data.twitter_link) && (
-            <a
-              href="https://github.com/StevenShiGit"
-              className="p-2 text-2xl text-slate-300 transition-all duration-150 hover:scale-125 hover:text-yellow-400"
-              aria-label={settings.data.name + " on Twitter"}
-            >
-              <FaTwitter />
-            </a>
-          )}
-          {isFilled.link(settings.data.linkedin_link) && (
-            <a
-              href="https://github.com/StevenShiGit"
-              className="p-2 text-2xl text-slate-300 transition-all duration-150 hover:scale-125 hover:text-yellow-400"
-              aria-label={settings.data.name + " on LinkedIn"}
-            >
-              <FaLinkedin />
-            </a>
-          )}
+          
         </div>
       </div>
     </Bounded>

@@ -150,7 +150,7 @@ function DesktopMenu({
       ))}
       <li>
         <ResumeButton
-          linkField="https://github.com/StevenShiGit"
+          linkField="https://github.com/StevenShiGit/Resume/blob/main/Steven_most_recent_res.pdf"
           label="Resume"
           className="ml-3"
         />

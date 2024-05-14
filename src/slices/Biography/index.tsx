@@ -19,7 +19,7 @@ const Biography = ({ slice }: BiographyProps): JSX.Element => {
     >
       <div className="grid gap-x-8 gap-y-6 md:grid-cols-[2fr,1fr]">
         <Heading size="xl" className="col-start-1">
-          About me
+          About Me
         </Heading>
 
         <div className="prose prose-xl prose-slate prose-invert col-start-1">
@@ -44,7 +44,7 @@ const Biography = ({ slice }: BiographyProps): JSX.Element => {
           When I&apos;m not programming, I enjoy weightlifting, cooking, basketball, and playing chess.
         </div>
         <ResumeButton
-          linkField= "https://www.wikipedia.org"
+          linkField= "https://github.com/StevenShiGit/Resume/blob/main/Steven_most_recent_res.pdf"
           label={slice.primary.button_text}
         />
 
